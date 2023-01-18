@@ -1,0 +1,16 @@
+{
+    "name": "api-cadastro",
+    "version":2,
+    "public": true,
+    "build":{
+        "src": "./app.js",        
+        "use": "@vercel/node"
+    },
+    "routes":[
+        {
+            "src": "/(.*)",
+            "dest" : "./routes/index.js"
+
+        }
+    ]
+}
